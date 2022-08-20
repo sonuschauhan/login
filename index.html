@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="mystylesheet.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<form action="home.html">
+			<div class="header">
+				<h1>SignUp</h1>
+				<input type="text" name="name" id="f" required="" placeholder="First name">
+				<input type="email" name="email" id="email" required="" placeholder="Email" width="20px">
+				<input type="Password" name="pincode" id="password" required="" placeholder="password">
+				<div class="btn">
+					<button type="submit" class="btn" id="buttton" onclick="confirm()">Sign in</button>
+
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+<script>
+	function confirm() {
+		var fname;
+		fname = document.getElementById("f").value;
+		localStorage.setItem("First name", fname);
+	}
+</script>
+
+</html>
